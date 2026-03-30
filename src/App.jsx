@@ -90,25 +90,22 @@ export default function SebastianCoutoPortfolioV2() {
       title: "CI Signal",
       text: "Pipelines diseñados para reducir ruido, aumentar confianza y transformar CI en una señal clara para release.",
       icon: Zap,
-      badge: "Core Focus",
+
     },
     {
       title: "PR Feedback",
       text: "Hallazgos accionables sobre pull requests para acelerar iteración, revisión y aprendizaje técnico.",
       icon: GitPullRequestArrow,
-      badge: "Core Focus",
     },
     {
       title: "AI-enriched Feedback",
       text: "IA como capa de enriquecimiento para resumir, contextualizar y sugerir, sin volver el sistema dependiente.",
       icon: Sparkles,
-      badge: "Core Focus",
     },
     {
       title: "Metrics",
       text: "Mutation score, flaky rate, feedback time y cobertura útil como parte de una estrategia de señal confiable.",
       icon: BarChart3,
-      badge: "Core Focus",
     },
   ];
 
@@ -432,10 +429,6 @@ export default function SebastianCoutoPortfolioV2() {
                               {item.title}
                             </h3>
                           </div>
-
-                          <span className="rounded-full border border-amber-300/20 bg-amber-300/10 px-2.5 py-1 text-[11px] uppercase tracking-[0.18em] text-amber-200">
-                            {item.badge}
-                          </span>
                         </div>
 
                         <p className="text-sm leading-7 text-slate-300">{item.text}</p>
