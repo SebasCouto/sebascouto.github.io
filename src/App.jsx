@@ -237,6 +237,15 @@ export default function SebastianCoutoPortfolioV2() {
       ? "bg-gradient-to-r from-amber-300 via-amber-200 to-amber-100"
       : "bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-200";
 
+  const SectionDivider = () => (
+    <section className="mx-auto max-w-7xl px-6 py-3 lg:px-8">
+      <div className="relative h-px w-full overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+        <div className="absolute left-1/2 top-1/2 h-px w-40 -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-transparent via-blue-300/25 to-transparent" />
+      </div>
+    </section>
+  );
+
   return (
     <div className="min-h-screen overflow-hidden bg-[#07111f] text-slate-100">
       <div className="absolute inset-0 -z-10">
@@ -251,7 +260,7 @@ export default function SebastianCoutoPortfolioV2() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <div>
             <p className="text-sm uppercase tracking-[0.28em] text-blue-300">SebCo. Labs</p>
-            <p className="text-xs text-slate-400">Portfolio | SEBASTIÁN COUTO</p>
+            <p className="text-xs text-slate-400">PORTFOLIO | SEBASTIÁN COUTO</p>
           </div>
 
           <nav className="hidden gap-6 text-sm text-slate-300 md:flex">
@@ -278,15 +287,8 @@ export default function SebastianCoutoPortfolioV2() {
       </header>
 
       <main>
-        <section className="mx-auto grid max-w-7xl gap-14 px-6 pb-20 pt-20 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:pb-28 lg:pt-28">
-          <div className="space-y-9">
-            
-              <div className="space-y-2">
-                <p className="text-lg md:text-xl font-semibold tracking-[0.16em] text-slate-200">
-                  Sebastián <span className="text-white">Couto</span>
-                </p>
-              </div>
-
+        <section className="mx-auto grid max-w-7xl gap-12 px-6 pb-16 pt-10 lg:grid-cols-[1.08fr_0.92fr] lg:px-8 lg:pb-24 lg:pt-14">
+          <div className="space-y-7">
             <div className="space-y-5">
               <div className="inline-flex items-center gap-2 rounded-full border border-blue-300/20 bg-blue-400/10 px-4 py-2 text-xs uppercase tracking-[0.22em] text-blue-100 shadow-[0_0_20px_rgba(59,130,246,0.12)]">
                 <Bot className="h-3.5 w-3.5" />
@@ -467,9 +469,7 @@ export default function SebastianCoutoPortfolioV2() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-2 lg:px-8">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        </section>
+        <SectionDivider />
 
         <section id="about" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
@@ -498,7 +498,9 @@ export default function SebastianCoutoPortfolioV2() {
           </div>
         </section>
 
-        <section id="work" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+        <SectionDivider />
+
+        <section id="work" className="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-14">        
           <div className="mb-8 flex flex-col gap-4">
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-blue-300">Featured Work</p>
@@ -571,7 +573,7 @@ export default function SebastianCoutoPortfolioV2() {
             ))}
           </div>
 
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
             {hasMore ? (
               <button
                 onClick={() => setVisibleCount((prev) => prev + 3)}
@@ -590,11 +592,9 @@ export default function SebastianCoutoPortfolioV2() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-2 lg:px-8">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        </section>
+        <SectionDivider />
 
-        <section id="skills" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
+        <section id="skills" className="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-14">
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-blue-300">Skills</p>
@@ -658,6 +658,8 @@ export default function SebastianCoutoPortfolioV2() {
             </div>
           </div>
         </section>
+
+        <SectionDivider />
 
         <section id="metrics" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
           <div className="mb-8">
@@ -762,9 +764,7 @@ export default function SebastianCoutoPortfolioV2() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-7xl px-6 py-2 lg:px-8">
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-        </section>
+        <SectionDivider />
 
         <section id="approach" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
           <div className="mb-8">
@@ -793,6 +793,8 @@ export default function SebastianCoutoPortfolioV2() {
             })}
           </div>
         </section>
+
+        <SectionDivider />
 
         <section id="contact" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-20">
           <div className="rounded-[2.25rem] border border-white/10 bg-gradient-to-br from-blue-400/10 via-white/5 to-cyan-400/10 p-8 shadow-[0_0_40px_rgba(251,191,36,0.06)] backdrop-blur-xl md:p-10">
