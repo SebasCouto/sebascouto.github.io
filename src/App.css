@@ -182,3 +182,23 @@
     border-right-color: var(--border);
   }
 }
+
+:root {
+  background-color: #07111f;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+  overflow-x: clip;
+  background-color: #07111f;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
