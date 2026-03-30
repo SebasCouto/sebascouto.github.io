@@ -35,7 +35,7 @@ export default function SebastianCoutoPortfolioV2() {
         "Framework orientado a calidad como sistema: feedback automatizado en PRs, reusable workflows y señales confiables en CI.",
       tags: ["Python", "GitHub Actions", "Quality Engineering"],
       language: "Python",
-      href: "#",
+      href: "https://github.com/PlatformUnityCI/cross-platform-guard",
       accent: "core",
     },
     {
@@ -44,7 +44,7 @@ export default function SebastianCoutoPortfolioV2() {
         "Base reusable para mover controles de calidad entre repos y evolucionar hacia un enfoque multilenguaje.",
       tags: ["CI/CD", "Reusable Workflows", "Automation"],
       language: "YAML",
-      href: "#",
+      href: "https://github.com/PlatformUnityCI/cross-quality-ci",
       accent: "standard",
     },
     {
@@ -53,7 +53,7 @@ export default function SebastianCoutoPortfolioV2() {
         "Exploración práctica de mutmut para medir efectividad de tests, detectar mutantes sobrevivientes y fortalecer cobertura real.",
       tags: ["mutmut", "pytest", "Test Effectiveness"],
       language: "Python",
-      href: "#",
+      href: "https://github.com/PlatformUnityCI/sebco-labs-mutation-testing",
       accent: "core",
     },
     {
@@ -503,8 +503,8 @@ export default function SebastianCoutoPortfolioV2() {
               </h2>
             </div>
             <p className="max-w-2xl text-sm leading-7 text-slate-400">
-              Esta versión muestra proyectos destacados de forma curada. Más adelante esta
-              sección puede nutrirse automáticamente desde GitHub con actividad, métricas y
+              Mi intención es mostrar proyectos destacados de forma curada. Más adelante esta
+              sección se nutrirá automáticamente desde GitHub con actividad, métricas y
               señales adicionales.
             </p>
           </div>
@@ -799,7 +799,7 @@ export default function SebastianCoutoPortfolioV2() {
                   Let’s build better quality signals
                 </h2>
                 <p className="mt-4 max-w-2xl text-base leading-8 text-slate-300">
-                  Esta V2 prioriza claridad, señal e identidad profesional, manteniendo una
+                  Esta portfolio prioriza claridad, señal e identidad profesional, manteniendo una
                   base sólida para evolucionar hacia un portfolio vivo con datos automáticos
                   desde GitHub.
                 </p>
