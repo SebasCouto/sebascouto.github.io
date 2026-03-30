@@ -20,7 +20,6 @@ import {
   Layers3,
   Radar,
   Bot,
-  Orbit,
   ScanSearch,
   Waypoints,
   Cpu,
@@ -92,28 +91,24 @@ export default function SebastianCoutoPortfolioV2() {
       text: "Pipelines diseñados para reducir ruido, aumentar confianza y transformar CI en una señal clara para release.",
       icon: Zap,
       badge: "Core Focus",
-      accent: "amber",
     },
     {
       title: "PR Feedback",
       text: "Hallazgos accionables sobre pull requests para acelerar iteración, revisión y aprendizaje técnico.",
       icon: GitPullRequestArrow,
       badge: "Core Focus",
-      accent: "amber",
     },
     {
       title: "AI-enriched Feedback",
       text: "IA como capa de enriquecimiento para resumir, contextualizar y sugerir, sin volver el sistema dependiente.",
       icon: Sparkles,
       badge: "Core Focus",
-      accent: "amber",
     },
     {
       title: "Metrics",
       text: "Mutation score, flaky rate, feedback time y cobertura útil como parte de una estrategia de señal confiable.",
       icon: BarChart3,
       badge: "Core Focus",
-      accent: "amber",
     },
   ];
 
@@ -208,16 +203,9 @@ export default function SebastianCoutoPortfolioV2() {
 
   const narrativeTags = [
     "CI Signal",
-    "PR Feedback",
     "Mutation Testing",
+    "PR Feedback",
     "Quality Metrics",
-  ];
-
-  const signalSteps = [
-    "Coverage con intención",
-    "Pipelines con menos ruido",
-    "Feedback accionable",
-    "Métricas para decidir",
   ];
 
   const [visibleCount, setVisibleCount] = useState(3);
@@ -400,30 +388,6 @@ export default function SebastianCoutoPortfolioV2() {
                 </div>
               ))}
             </div>
-
-            <div className="rounded-[1.8rem] border border-white/10 bg-slate-950/35 p-5 backdrop-blur-sm">
-              <div className="mb-3 flex items-center gap-3">
-                <div className="flex h-9 w-9 items-center justify-center rounded-2xl border border-blue-300/20 bg-blue-400/10 text-blue-200">
-                  <Orbit className="h-4 w-4" />
-                </div>
-                <p className="text-sm uppercase tracking-[0.22em] text-blue-200">
-                  Signal flow
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-3">
-                {signalSteps.map((step, index) => (
-                  <div key={step} className="flex items-center gap-3">
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs text-slate-300">
-                      {step}
-                    </span>
-                    {index < signalSteps.length - 1 ? (
-                      <ArrowRight className="hidden h-4 w-4 text-slate-500 sm:block" />
-                    ) : null}
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
 
           <div className="relative">
@@ -535,7 +499,7 @@ export default function SebastianCoutoPortfolioV2() {
         </section>
 
         <section id="work" className="mx-auto max-w-7xl px-6 py-10 lg:px-8 lg:py-16">
-          <div className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div className="mb-8 flex flex-col gap-4">
             <div>
               <p className="text-sm uppercase tracking-[0.28em] text-blue-300">Featured Work</p>
               <h2 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
