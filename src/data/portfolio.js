@@ -36,7 +36,16 @@ export const featuredRepos = [
     href: "https://github.com/PlatformUnityCI/sebco-qa-engine/blob/main/README.md",
     accent: "standard",
   },
-    {
+  {
+    name: "Payments - API Testing",
+    summary:
+      "API de transferencias diseñada para testing end-to-end en flujos financieros. Incluye validaciones de negocio, idempotencia y documentación OpenAPI publicada para validar contratos y escenarios reales.",
+    tags: ["QA", "API Testing", "FastAPI", "OpenAPI", "CI/CD", "Automation"],
+    language: "Python",
+    href: "https://sebascouto.github.io/sebco-labs-payments-api-consumer-tests/swagger/",
+    accent: "core",
+  },
+  {
     name: "PR Feedback System",
     summary:
       "Automatización de hallazgos en pull requests con comentarios accionables, foco en señal y mejora continua.",
@@ -53,15 +62,6 @@ export const featuredRepos = [
     language: "Python",
     href: "https://github.com/PlatformUnityCI/sebco-labs-mutation-testing/blob/main/README.md",
     accent: "core",
-  },
-  {
-    name: "Layer Validation PoC",
-    summary:
-      "Validación end-to-end de reportes financieros, conectando mocks de API, lógica de negocio y documentos PDF para asegurar consistencia real.",
-    tags: ["QA", "Functional Testing E2E", "Finance", "Automation", "psycopg2", "pytesseract", "PyPDF2", "IN PROGRESS"],
-    language: "Python",
-    href: "https://github.com/SebasCouto/sebco-labs-layer-validation",
-    accent: "standard",
   },
 ];
 
